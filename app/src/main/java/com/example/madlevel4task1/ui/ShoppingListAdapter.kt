@@ -15,7 +15,7 @@ class ShoppingListAdapter(private val products: List<Product>) : RecyclerView.Ad
 
         fun databind(product: Product) {
             itemView.tvName.text = product.productName
-            itemView.tvQuantity.text = product.productQuantity.toString()
+            itemView.tvQuantity.text = product.productQuantity.toString() + "X"
         }
     }
 
